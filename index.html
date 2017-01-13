@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>众神眷恋的幻想乡</title>
+    <script src="js/requestNextAnimationFrame.js"></script><!--浏览器兼容-->
+    <script src="js/data.js"></script><!--资源路径数组,精灵表-->
+    <script src="js/variable.js"></script><!--全局变量名-->
+    <script src="js/function.js"></script><!--主要函数-->
+    <script src="js/event.js"></script><!--所有事件(键盘)-->
+    <script src="js/loading.js"></script><!--资源预加载函数-->
+    <script src="js/frame.js"></script><!--不同游戏进度帧-->
+    <script src="js/sprites.js"></script><!--精灵类和精灵初始化函数-->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<h1>众神眷恋的幻想乡</h1>
+<canvas id="canvas" width="640" height="480"></canvas>
+<p id="fps" style="position: absolute; left: 0; top: 0;"></p>
+<p id="showGameNotes" style="position: absolute; left: 0; top: 60px; font-size: 15px;">
+    游戏说明：<br/>
+    全部完成大概300秒<br/>
+    每隔60秒敌机换弹幕<br/>
+    自机判定点被击中才算死亡<br/>
+    （判定点按住shift时会显示）<br/>
+    <br/>
+</p>
+<p style="position: absolute; left: 0; top: 150px; font-size: 20px; font-weight: 900; border: solid red">
+    操作：<br/>
+    ↑↓←→:移动<br/>
+    &nbsp;shift:低速飞行<br/>
+    &nbsp;z&nbsp;&nbsp;:射击<br/>
+    &nbsp;x&nbsp;&nbsp;:符卡<br/>
+    &nbsp;esc&nbsp;:暂停<br/>
+</p>
+<p style="position: absolute; left: 0; top: 300px; font-size: 12px; ">
+    <br/>以下内容看不看并不影响游戏:)<br/>
+    数据：<br/>
+    分数：每次击破敌机后 += 自机point * 1231<br/>
+    生命：6条，显示0后再死亡就gameover<br/>
+    能量：1~5，真正的射击火力只有1~4，使用符卡后-1<br/>
+    （因为最低是1，所以能量大于等于2才可以用符卡）<br/>
+    <br/>
+    其他：<br/>
+    自机死亡后重生有5s无敌时间(自机显示半透明)<br/>
+    击破敌机后会掉落power(红色)和point(蓝色)<br/>
+    吃power 自机power + 0.5<br/>
+    吃point 自机point + 1<br/>
+    自机重生后power,point重置1<br/>
+</p>
+<script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+#canvas {
+    background-color: aquamarine;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    border: thin solid #aaaaaa;
+    box-shadow: 10px 10px 12px rgba(86, 102, 255, 0.5);
+}
+h1 {
+    text-align: center;
+    color: lightcyan;
+}
