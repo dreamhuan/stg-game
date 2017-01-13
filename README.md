@@ -7,3 +7,7 @@ inspiration from “Touhou Project”  
 STG：https://en.wikipedia.org/wiki/Shoot_%27em_up  
 Touhou Project：https://en.wikipedia.org/wiki/Touhou_Project  
 Mountain of Faith：https://en.wikipedia.org/wiki/Mountain_of_Faith
+
+### some screenshots
+![弹幕](1.png)
+![BOSS](2.png)
