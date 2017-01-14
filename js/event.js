@@ -9,11 +9,10 @@ window.onkeydown = function (e) {
             player.fire = true;
             break;
         case 88://x
-            if (player.power >= 2) {
+            if (player.power >= 2 && !playerspellcard.visible) { //加上符卡不可见的判断是保证不会同时发动符卡
                 player.power -= 1;
                 player.fireLevel -= 1;
                 showPower -= 1;
-                player.spellcard = true;
                 playerspellcard.visible = true;
             }
             break;

@@ -116,13 +116,12 @@ function initSprite() {
         player.toTop = false;
         player.toBottom = false;
 
+        player.lowerSpeed = false;
+
         player.fire = false;
         player.fireLevel = 1;
         player.power = 1.0;
         player.point = 1;
-
-        player.lowerSpeed = false;
-        player.spellcard = false; //判断有没有发动符卡
 
         player.visible = true;
         player.lastTimeShoot = new Date(); //射击时绘制子弹频率
@@ -379,7 +378,7 @@ function initSprite() {
                 if (sprite.rotateAngle > 360) { //1s结束 转了一圈,直径增加258
                     sprite.rotateAngle = 0;
                     sprite.r = 0;
-                    sprite.visible = false;
+                    sprite.visible = false; //转完后visible改回false
                 }
             }
         }];

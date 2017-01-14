@@ -186,7 +186,7 @@ function gameLoop() {
         }
     });
 
-    if (player.spellcard && playerspellcard.visible) {
+    if (playerspellcard.visible) {
         playerspellcard.update(context, now);
         playerspellcard.paint(context);
         bullets.foreach(function () {
