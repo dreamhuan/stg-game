@@ -56,8 +56,8 @@ Sprite.prototype = {
     }
 };
 
-function initSprit() {
-    // console.log("initSprit");
+function initSprite() {
+    // console.log("initSprite");
 //*******************************************   初始化自机   ***********************************************************
     (function initplayer() { //即时执行函数，封装变量作用域
         // console.log("initplayer");

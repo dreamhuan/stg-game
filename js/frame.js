@@ -31,7 +31,7 @@ function loadingFrame() {
 
     //****************     这里的代码只执行一次  进入游戏前的资源预处理and初始化   ******************
     if (loadingComplete) {
-        initSprit(); //初始化精灵
+        initSprite(); //初始化精灵
 
         lastTime = new Date(); //用于计算fps,这一行不能放到外面,不然上面setTimeout的延时严重影响结果(又是1小时的bug...)
         lastGameTime = new Date(); //用于计算游戏进度
