@@ -68,13 +68,13 @@ window.onkeydown = function (e) {
                 lastGameTime = new Date();
                 lastenemyTime = new Date();
                 lastTime = new Date(); //没有这一行的话计算fps会有问题,将直接导致画背景出问题
-                ganmeFrame();
+                gameFrame();
             } else if (gameStop) {
                 gameStop = false;
                 document.getElementById("bgm").play();
                 lastTime = new Date(); //没有这一行的话计算fps会有问题,将直接导致画背景出问题
                 lastGameTime = new Date(); //用于计算游戏时间,并且跳过暂停的时间
-                ganmeFrame();
+                gameFrame();
             }
             break;
         case 27: //esc

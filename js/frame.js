@@ -57,12 +57,12 @@ function loadingFrame() {
         offcontextBG.drawImage(imageBGMove, 34, 18, 385, 450); //画可移动的背景
 
         cancelAnimationFrame(animationFrame); //关闭加载界面帧
-        animationFrame = requestNextAnimationFrame(ganmeFrame); //进入游戏帧
+        animationFrame = requestNextAnimationFrame(gameFrame); //进入游戏帧
     }
 }
 
 //********************************************    游戏界面帧   ******************************************************
-function ganmeFrame() {
+function gameFrame() {
     //console.log("gameFrame");
 
     context.clearRect(0, 0, canvas.width, canvas.height);
@@ -84,7 +84,7 @@ function ganmeFrame() {
     drawBackground();
     gameLoop();
     gameShow();
-    animationFrame = requestNextAnimationFrame(ganmeFrame);
+    animationFrame = requestNextAnimationFrame(gameFrame);
 
     if (gameStop) {
         cancelAnimationFrame(animationFrame);
