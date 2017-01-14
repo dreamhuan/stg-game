@@ -12,7 +12,7 @@ lowspeed:　shift
 
 
 ####*Enjoy it : https://dreamhuan.github.io/stg-game/* 
-inspiration from “Touhou Project”  
+inspiration from “Touhou Project”    
 STG：https://en.wikipedia.org/wiki/Shoot_%27em_up  
 Touhou Project：https://en.wikipedia.org/wiki/Touhou_Project  
 Mountain of Faith：https://en.wikipedia.org/wiki/Mountain_of_Faith
