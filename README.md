@@ -6,9 +6,11 @@
 ### A type of STG(Shooting Game)
 ***mainly use HTML5 and JavaScript***  
 >move:　↑↓←→    
->shoot:　z     
->bomb:　x     
->lowspeed:　shift   
+shoot:　z     
+bomb:　x     
+lowspeed:　shift   
+
+
 ####*Enjoy it : https://dreamhuan.github.io/stg-game/* 
 inspiration from “Touhou Project”  
 STG：https://en.wikipedia.org/wiki/Shoot_%27em_up  
